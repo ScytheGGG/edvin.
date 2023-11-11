@@ -1,0 +1,51 @@
+/* Simple code that makes my life easier */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------- */
+/* ---- Navigation bar  ---- */
+.header {
+        background-color: white;
+        font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
+        font-size: 18px;
+        letter-spacing: 3px; 
+        text-align: center;
+        color:gray;
+        padding: 35px; /* Adds padding to the navigation bar */
+}
+
+/* Make header topics appear next to each other */
+.header h3 {
+        display: inline-block;
+        margin-right: 35px; /* Adjust the margin as needed to separate the topics */
+}
+
+.headerIMG {
+        background-image: url('Edvindot - Thoughts that keep rotting - cover.jpg');
+        background-size: 300px 300px; /* Set the size of each repetition */
+        background-repeat: repeat; /* Repeat the image in both directions */
+        height: 300px; /* Set the height of the container */
+        width: calc(100% + 65px);
+        margin-left: -65px; /* Adjust to center the first image */
+}
+
+/* ----------------------------------------------------------- */
+/* ---- Home  ---- */
+.socialsHeader {
+        margin-top: 30px;
+        text-align: center;
+        font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
+        font-size: 18px;
+        letter-spacing: 2px;
+}
+
+.socials {
+        margin-top: 15px;
+        text-align: center;
+        font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
+        font-size: 18px;
+        letter-spacing: 2px;
+} 
