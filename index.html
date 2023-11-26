@@ -15,15 +15,50 @@
                 <div>
                         <div class="social-container">
                                 <div class="socials">
-                                        <p class="socialsc"><span style="font-weight: bold;">soundcloud.</span></p>
-                                        <p class="socialsp"><span style="font-weight: bold;">spotify.</span></p>
-                                        <p class="socialig"><span style="font-weight: bold;">instagram.</span></p>
-                                        <p class="socialbc"><span style="font-weight: bold;">bandcamp.</span></p>
+                                        <p class="socialsc"><span style="font-weight: bold;"><a href="https://soundcloud.com/edvindot" target="_blank">soundcloud.</a></span></p>
+                                        <p class="socialsp"><span style="font-weight: bold;"><a href="https://spotify.com" target="_blank">spotify.</a></span></p>
+                                        <p class="socialig"><span style="font-weight: bold;"><a href="https://www.instagram.com/edvindotedvin/" target="_blank">instagram.</a></span></p>
+                                        <p class="socialbc"><span style="font-weight: bold;"><a href="https://bandcamp.com" target="_blank">bandcamp.</a></span></p>
                                 </div>
                                 <img class="edvinPic" src="CR_1.jpg" alt="edvin.">
                         </div>
+                        <div class="button-container">
+                                <button id="prevBtn">&#10094;</button>
+                                <button id="nextBtn">&#10095;</button>
+                        </div>
+                        <script>
+                                let currentImageIndex = 0; // Keep track of the current image index
+                                // Array of image sources
+                                const images = [
+                                    "CR_1.jpg",
+                                    "CR_3.jpg",
+                                    "CR_6.jpg",
+                                    "CR_4.jpg",
+                                    "CR_7.jpg",
+                                    "CR_2.jpg",
+                                    "CR_5.jpg",
+                                    "CR_8.jpg",
+                                ];
+                                const edvinPic = document.querySelector(".edvinPic");
+                                const prevBtn = document.getElementById("prevBtn");
+                                const nextBtn = document.getElementById("nextBtn");
+                                // Function to show the current image
+                                function showImage() {
+                                    edvinPic.src = images[currentImageIndex];
+                                }
+                                // Event listener for the previous button
+                                prevBtn.addEventListener("click", function() {
+                                    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                                    showImage();
+                                });
+                                // Event listener for the next button
+                                nextBtn.addEventListener("click", function() {
+                                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                                    showImage();
+                                });
+                                showImage();
+                            </script>
                         <p class="edvinName">edvin.</p>
                 </div>
-                <p class="creator">Website by Karl Tammehoid</p>
         </body>
 </html>

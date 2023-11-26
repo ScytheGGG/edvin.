@@ -46,11 +46,20 @@ img {
                 margin-right: 47px;
         }
         .socialig {
-                margin-left: 7px;
+                margin-left: 3px;
         }
         .socialbc {
-                margin-left: 13px;
+                margin-left: 11px;
         }
+}
+
+.socials p a {
+        color: black; /* Set the color explicitly to black */
+        text-decoration: none; /* Remove default underline */
+}
+    
+.socials p a:hover {
+        text-decoration: underline;
 }
 
 .edvinPic {
@@ -60,6 +69,20 @@ img {
         height: 190px;
 }
 
+.button-container {
+        text-align: center; /* Center the buttons horizontally */
+        padding-left: 258px;
+        margin-top: 5px; /* Adjust this margin as needed */
+}
+    
+    /* Style the buttons */
+.button-container button {
+        margin: 0 10px; /* Add space between buttons */
+        font-size: 24px; /* Adjust button font size */
+        cursor: pointer;
+        border:none;
+}
+
 .edvinName {
         text-align: center;
         margin-top: 10px;
@@ -67,16 +90,6 @@ img {
         font-size: 50px;
         font-family:cursive
 }
-
-.creator {
-        text-align: center;
-        margin-top: 50px;
-        font-family: 'Roboto Condensed', 'Lato', Arial, sans-serif!important;
-        font-size: 18px;
-        letter-spacing: 2px;
-        color: white;
-}
-
 
 /* make it compatible with phones and others */
 @media (max-width: 600px) {
