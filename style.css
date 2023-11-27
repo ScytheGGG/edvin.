@@ -71,29 +71,4 @@ img {
 
 /* make it compatible with phones and others */
 @media (max-width: 600px) {
-        .header {
-                padding-left: 65px;
-        }
-
-        .edvinPic {
-                margin-top: 80px;
-                margin-right: 625px; /* Adjust the margin-right as needed */
-        }
-        
-         .socials {
-                padding-right: 40px;
-                margin-left: 640px; /* Adjust the margin-left as needed */
-                .socialsc {
-                    margin-left: 18px;
-                }
-                .socialsp {
-                    margin-right: 57px;
-                }
-                .socialig {
-                    margin-left: -7px;
-                }
-                .socialbc {
-                    margin-left: 3px;
-                }
-        }
 }
