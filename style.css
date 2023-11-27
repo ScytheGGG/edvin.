@@ -14,12 +14,12 @@
         letter-spacing: 3px; 
         text-align: center;
         color:black;
-        padding: 25px; /* Adds padding to the navigation bar */
+        padding: 15px; /* Adds padding to the navigation bar */
 }
 
 img {
-        width: 350px;
-        height: 350px;
+        width: 330px;
+        height: 330px;
         display: block;
         margin: auto;
 }
@@ -30,7 +30,7 @@ img {
         padding-top: 20px;
         text-align: center;
         font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
-        font-size: 37px;
+        font-size: 30px;
         letter-spacing: -1px;
 }
 
@@ -65,7 +65,7 @@ img {
 .edvinName {
         text-align: center;
         margin-top: 10px;
-        font-size: 40px;
+        font-size: 35px;
         font-family: 'Roboto Condensed', 'Lato', Arial, sans-serif!important;
 }
 
