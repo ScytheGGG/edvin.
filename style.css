@@ -18,39 +18,20 @@
 }
 
 img {
-        width: 450px;
-        height: 450px;
+        width: 350px;
+        height: 350px;
         display: block;
         margin: auto;
 }
 /* ----------------------------------------------------------- */
 /* ---- Home  ---- */
 
-.social-container {
-        display: flex; /* Use flexbox to create a horizontal layout */
-        justify-content: center; /* Center the items horizontally */
-        align-items: center; /* Center the items vertically */
-        margin-top: -20px;
-}
-
 .socials {
-        margin-left: 705px;
+        padding-top: 20px;
         text-align: center;
         font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
-        font-size: 40px;
+        font-size: 37px;
         letter-spacing: -1px;
-        .socialsc {
-                margin-left: 28px;
-        }
-        .socialsp {
-                margin-right: 47px;
-        }
-        .socialig {
-                margin-left: 3px;
-        }
-        .socialbc {
-                margin-left: 11px;
-        }
 }
 
 .socials p a {
@@ -63,15 +44,13 @@ img {
 }
 
 .edvinPic {
-        margin-top: 80px;
-        margin-right: 735px; /* Adjust the margin-left as needed */
+        margin-top: 20px;
         width: 190px;
         height: 190px;
 }
 
 .button-container {
         text-align: center; /* Center the buttons horizontally */
-        padding-left: 258px;
         margin-top: 5px; /* Adjust this margin as needed */
 }
     
@@ -86,9 +65,8 @@ img {
 .edvinName {
         text-align: center;
         margin-top: 10px;
-        margin-left: 265px;
-        font-size: 50px;
-        font-family:cursive
+        font-size: 40px;
+        font-family: 'Roboto Condensed', 'Lato', Arial, sans-serif!important;
 }
 
 /* make it compatible with phones and others */
@@ -117,10 +95,5 @@ img {
                 .socialbc {
                     margin-left: 3px;
                 }
-        }
-        
-        .creator {
-                margin-top: 80px;
-                padding-left: 35px;
         }
 }
