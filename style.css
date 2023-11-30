@@ -6,15 +6,6 @@
         background-color: #868686;
 }        
 
-.background-container {
-        background-image: url('white_lines.png');
-        background-repeat: no-repeat;
-        background-size: 334px 500px;
-        background-position: center bottom 37px;
-        z-index: 1;
-        position: relative;
-}      
-
 /* ----------------------------------------------------------- */
 /* ---- Navigation bar  ---- */
 .header {
@@ -44,7 +35,7 @@ img {
 }
 
 .socials p a {
-        color: black; /* Set the color explicitly to black */
+        color: black; 
         text-decoration: none; /* Remove default underline */
 }
     
@@ -52,23 +43,31 @@ img {
         text-decoration: underline;
 }
 
-.edvinPic {
-        margin-top: 20px;
+.image-container {
+        width: 80%; /* Set the desired width */
+        max-width: 400px; /* Limit the maximum width */
+        margin: 0 auto; /* Center the container horizontally */
+        padding: 20px; /* Add some padding around the container */
+        text-align: center; /* Center align the contents */
+}
+
+/* Adjustments for the images inside the container */
+.image-container img {
+        max-width: 100%; /* Make images responsive within the container */
+        height: 190px; /* Maintain aspect ratio */
         width: 190px;
-        height: 190px;
 }
 
 .button-container {
-        text-align: center; /* Center the buttons horizontally */
-        margin-top: 5px; /* Adjust this margin as needed */
+        text-align: center;
+        white-space: nowrap;
 }
     
-    /* Style the buttons */
-.button-container button {
-        margin: 0 10px; /* Add space between buttons */
-        font-size: 20px; /* Adjust button font size */
+    /* Style the images */
+.button-container img {
+        margin: 0 10px;
+        display: inline;
         cursor: pointer;
-        border:none;
 }
 
 .edvinName {

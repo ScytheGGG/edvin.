@@ -12,54 +12,63 @@
                         <h3 >website.</h3>
                 </header>
                 <img src="Edvin. - Thoughts that keep rotting - cover.jpg" alt="Thoughts that keep rotting">
-                <div class="background-container">
-                        <div class="socials">
-                                <p><span style="font-weight: bold;"><a href="https://www.youtube.com/channel/UCZJWGXrwsWy2p_kHvwbwphA" target="_blank">youtube.</a></span></p>
-                                <p><span style="font-weight: bold;"><a href="https://open.spotify.com/artist/6PJtoaiieO4YeihmQ4UiF3" target="_blank">spotify.</a></span></p>
-                                <p><span style="font-weight: bold;"><a href="https://music.apple.com/us/artist/edvin/1715191390" target="_blank">apple music.</a></span></p>
-                                <p><span style="font-weight: bold;"><a href="https://edvindot.bandcamp.com" target="_blank">bandcamp.</a></span></p>
-                                <p><span style="font-weight: bold;"><a href="https://soundcloud.com/edvindot" target="_blank">soundcloud.</a></span></p>
-                                <p><span style="font-weight: bold;"><a href="https://www.instagram.com/edvindotedvin/" target="_blank">instagram.</a></span></p>
-                                <p><span style="font-weight: bold;"><a href="https://www.tiktok.com/@edvindot" target="_blank">tiktok.</a></span></p>
-                        </div>
-                        <img class="edvinPic" src="CR_1.png" alt="edvin.">
-                        <div class="button-container">
-                                <button id="prevBtn">&lt;=</button>
-                                <button id="nextBtn">=&gt;</button>
-                        </div>
-                        <script>
-                                let currentImageIndex = 0; // Keep track of the current image index
-                                // Array of image sources
-                                const images = [
-                                    "CR_1.png",
-                                    "CR_3.png",
-                                    "CR_6.png",
-                                    "CR_4.png",
-                                    "CR_7.png",
-                                    "CR_2.png",
-                                    "CR_5.png",
-                                    "CR_8.png",
-                                ];
-                                const edvinPic = document.querySelector(".edvinPic");
-                                const prevBtn = document.getElementById("prevBtn");
-                                const nextBtn = document.getElementById("nextBtn");
-                                // Function to show the current image
-                                function showImage() {
-                                    edvinPic.src = images[currentImageIndex];
-                                }
-                                // Event listener for the previous button
-                                prevBtn.addEventListener("click", function() {
-                                    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-                                    showImage();
-                                });
-                                // Event listener for the next button
-                                nextBtn.addEventListener("click", function() {
-                                    currentImageIndex = (currentImageIndex + 1) % images.length;
-                                    showImage();
-                                });
-                                showImage();
-                            </script>
-                        <p class="edvinName"><span style="font-style: italic; font-weight: 800;">edvin.</span></p>
+                <div class="socials">
+                        <p><span style="font-weight: bold;"><a href="https://www.youtube.com/channel/UCZJWGXrwsWy2p_kHvwbwphA" target="_blank">youtube.</a></span></p>
+                        <p><span style="font-weight: bold;"><a href="https://open.spotify.com/artist/6PJtoaiieO4YeihmQ4UiF3" target="_blank">spotify.</a></span></p>
+                        <p><span style="font-weight: bold;"><a href="https://music.apple.com/us/artist/edvin/1715191390" target="_blank">apple music.</a></span></p>
+                        <p><span style="font-weight: bold;"><a href="https://edvindot.bandcamp.com" target="_blank">bandcamp.</a></span></p>
+                        <p><span style="font-weight: bold;"><a href="https://soundcloud.com/edvindot" target="_blank">soundcloud.</a></span></p>
+                        <p><span style="font-weight: bold;"><a href="https://www.instagram.com/edvindotedvin/" target="_blank">instagram.</a></span></p>
+                        <p><span style="font-weight: bold;"><a href="https://www.tiktok.com/@edvindot" target="_blank">tiktok.</a></span></p>
                 </div>
+                <div class="image-container">
+                        <!-- Images will be loaded here -->
+                </div>
+                <div class="button-container">
+                        <img id="prevImg" src="left_arrow.png" alt="Previous Image" style="width: 30px; height: 30px;">
+                        <img id="nextImg" src="right_arrow.png" alt="Next Image" style="width: 30px; height: 30px;">
+                </div>
+                <script>
+                        const images = [
+                                "https://github.com/tammehoidkarl/edvin./blob/main/CR_1.png?raw=true",
+                                "https://github.com/tammehoidkarl/edvin./blob/main/CR_3.png?raw=true",
+                                "https://github.com/tammehoidkarl/edvin./blob/main/CR_6.png?raw=true",
+                                "https://github.com/tammehoidkarl/edvin./blob/main/CR_4.png?raw=true",
+                                "https://github.com/tammehoidkarl/edvin./blob/main/CR_7.png?raw=true",
+                                "https://github.com/tammehoidkarl/edvin./blob/main/CR_2.png?raw=true",
+                                "https://github.com/tammehoidkarl/edvin./blob/main/CR_5.png?raw=true",
+                                "https://github.com/tammehoidkarl/edvin./blob/main/CR_8.png?raw=true",
+                                // Add other image URLs if needed...
+                        ];
+
+                        let currentImageIndex = 0;
+
+                        function showImage() {
+                        const imageContainer = document.querySelector(".image-container");
+                        imageContainer.innerHTML = ''; // Clear previous image(s)
+
+                        const img = document.createElement("img");
+                        img.src = images[currentImageIndex];
+                        img.alt = "Image";
+                        imageContainer.appendChild(img);
+                        }
+
+                        const prevImg = document.getElementById("prevImg");
+                        const nextImg = document.getElementById("nextImg");
+
+                        prevImg.addEventListener("click", function() {
+                        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                        showImage();
+                        });
+
+                        nextImg.addEventListener("click", function() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        showImage();
+                        });
+
+                        // Initially show the first image when the page loads
+                        window.addEventListener('DOMContentLoaded', showImage);
+                </script>
+                <p class="edvinName"><span style="font-style: italic; font-weight: 800;">edvin.</span></p>
         </body>
 </html>
