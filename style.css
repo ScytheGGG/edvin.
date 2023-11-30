@@ -8,15 +8,12 @@
 
 .background-container {
         background-image: url('white_lines.png');
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
         background-repeat: no-repeat;
         background-size: 334px 500px;
-        background-position: center bottom 40px;
-}
-      
+        background-position: center bottom 37px;
+        z-index: 1;
+        position: relative;
+}      
 
 /* ----------------------------------------------------------- */
 /* ---- Navigation bar  ---- */
@@ -42,7 +39,7 @@ img {
         padding-top: 20px;
         text-align: center;
         font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
-        font-size: 30px;
+        font-size: 25px;
         letter-spacing: -1px;
 }
 
@@ -69,7 +66,7 @@ img {
     /* Style the buttons */
 .button-container button {
         margin: 0 10px; /* Add space between buttons */
-        font-size: 24px; /* Adjust button font size */
+        font-size: 20px; /* Adjust button font size */
         cursor: pointer;
         border:none;
 }
@@ -82,5 +79,104 @@ img {
 }
 
 /* make it compatible with phones and others */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+        .background-container {
+                background-position: center bottom 27px;
+        }
+
+        .header {
+                font-size: 20px;
+        }
+
+        img {
+                width: 280px;
+                height: 280px;   
+        }
+
+        .socials {
+                font-size: 24px;
+        }
+
+        .edvinName {
+                font-size: 27px;
+        }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+        .background-container {
+                background-position: center bottom 27px;
+        }
+
+        .header {
+                font-size: 20px;
+        }
+
+        img {
+                width: 285px;
+                height: 285px;   
+        }
+
+        .socials {
+                font-size: 24px;
+        }
+
+        .edvinName {
+                font-size: 27px;
+        }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+        .background-container {
+                background-position: center bottom 27px;
+        }
+
+        .header {
+                font-size: 20px;
+        }
+
+        img {
+                width: 287px;
+                height: 287px;   
+        }
+
+        .socials {
+                font-size: 24px;
+        }
+
+        .edvinName {
+                font-size: 27px;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+        .background-container {
+                background-size: 344px 540px;
+                background-position: center bottom 23px;
+        }
+
+        .header {
+                font-size: 25px;
+        }
+
+        img {
+                width: 290px;
+                height: 290px;   
+        }
+
+        .socials {
+                font-size: 25px;
+        }
+
+        .edvinPic {
+                width: 200px;
+                height: 200px;
+        }
+
+        .button-container button {
+                font-size: 20px;
+        }
+
+        .edvinName {
+                font-size: 30px;
+        }
 }
